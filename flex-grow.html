@@ -27,27 +27,27 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: var(--background);
+      box-sizing: border-box;
     }
 
     .container {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      width: 80%;
-      margin: 20px;
-      /* height: 300px; */
-      padding: 16px;
+      width: 70%;
+      /* margin: 20px; */
+      padding: 22px;
       border: 1px solid var(--dark);
       border-radius: 20px;
+      gap: 0.5rem;
       background: #fff;
       box-shadow: 0 4px 12px 0 #51459F14;
       overflow: hidden;
-      margin: 17% auto;
+      margin: 50px auto;
     }
 
     .item {
-      flex-grow: 1;
+      flex-grow: 0;
       padding: 30px 35px;
       margin: 8px;
       border: 1px solid var(--dark);
@@ -59,7 +59,7 @@
     }
 
     .even {
-      flex-grow: 2;
+      flex-grow: -1;
       background: var(--light);
       color: var(--primary);
     }
@@ -71,9 +71,9 @@
     <!-- <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
         <div class="item even">Lorem ipsum dolor static.</div>
         <div class="item">Lorem.</div> -->
-    <div class="item">flex-grow: 1;</div>
-    <div class="item even">flex-grow: 2;</div>
-    <div class="item">flex-grow: 1;</div>
+    <div class="item">flex-grow: 0;</div>
+    <div class="item">flex-grow: 0;</div>
+    <div class="item">flex-grow: 0;</div>
 
   </div>
 </body>

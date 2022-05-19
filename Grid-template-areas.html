@@ -26,29 +26,22 @@
     body {
       height: 100%;
       padding: 10%;
-      background: var(--background);
       box-sizing: border-box;
     }
 
-    h1 {
-      color: var(--dark);
-      text-align: center;
-    }
-
     .container {
-      height: 300px;
-      width: 300px;
+      /* height: 300px; */
+      /* width: 300px; */
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(3, 1fr);
       grid-template-areas:
         "header header header header header"
-        "main main main . side"
+        "main main main side side"
         "footer footer footer footer footer";
       margin: 0 auto;
       padding: 22px;
       border: solid 1px var(--dark);
-
       border-radius: 20px;
       gap: 0.5rem;
       background: #fff;
@@ -56,10 +49,9 @@
     }
 
     .item {
-      padding: 10px;
+      padding: 50px;
       border-radius: 20px;
       border: solid 1px var(--dark);
-
       background-color: var(--primary);
       color: var(--white);
       box-shadow: 0px 4px 15px 0px #51459f14;
@@ -92,8 +84,8 @@
 <body>
   <div class="container">
     <div class="header item">Header</div>
-    <div class="main item even">Main</div>
-    <div class="sidebar item">Sidebar</div>
+    <div class="main item">Main</div>
+    <div class="sidebar item even">Sidebar</div>
     <div class="footer item even">Footer</div>
   </div>
 </body>
