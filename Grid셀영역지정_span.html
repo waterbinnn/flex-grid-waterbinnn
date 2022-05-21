@@ -40,25 +40,14 @@
       box-shadow: 0px 4px 12px 0px #51459f14;
     }
 
-    .item:nth-child(1) {
+    /* .item:nth-child(1) {
       grid-row: 1 / 2 span;
     }
 
     .item:nth-child(4) {
       grid-column: 2/ 2 span;
-    }
+    } */
 
-    .item:nth-child(1) {
-      /* 1번 row 라인에서 2칸 */
-      grid-row-start: 1;
-      grid-row-end: 2 span;
-    }
-
-    .item:nth-child(4) {
-      /* 2번 colunn 라인에서 2칸 */
-      grid-column-start: 2;
-      grid-column-end: 2 span;
-    }
 
     .item {
       padding: 50px;
@@ -70,6 +59,22 @@
       word-break: keep-all;
     }
 
+
+    .grid1 {
+      /* 1번 row 라인에서 시작해서 2칸 차지  */
+      grid-row: 1 / 2 span;
+      /* 2번 column 라인에서 시작해서 1칸 차지  */
+      grid-column: 2 / 1 span;
+    }
+
+
+    .grid2 {
+      /* 2번 row 라인에서 시작해서 1칸 차지  */
+      grid-row: 3 / 1 span;
+      /* 1번 column 라인에서 시작해서 2칸 차지  */
+      grid-column: 1 / 2 span;
+    }
+
     .even {
       background-color: var(--light);
       color: var(--dark);
@@ -79,10 +84,14 @@
 
 <body>
   <div class="container">
-    <div class="item">grid1</div>
-    <div class="item even">grid2</div>
-    <div class="item even">grid3</div>
-    <div class="item">grid4</div>
+    <div class="item grid1">grid1</div>
+    <div class="item grid2">grid2</div>
+    <div class="item even ">grid3</div>
+    <div class="item even ">grid4</div>
+    <div class="item even ">grid5</div>
+    <div class="item even ">grid6</div>
+    <div class="item even ">grid7</div>
+
   </div>
 </body>
 
